@@ -50,7 +50,7 @@ def onclick(event):
         iy, ix = int(event.xdata / dx), int(event.ydata / dy)
         if 0 <= ix < nx and 0 <= iy < ny:
             conc = C[ix, iy]
-            annotation.set_text(f'Pos: ({ix}, {iy})\nConc: {conc:.2f}')
+            annotation.set_text(f'Pos: ({iy}, {ix})\nConc: {conc:.2f}')
             annotation.xy = (0.95, 0.05)
             annotation.set_visible(True)
             plt.draw()

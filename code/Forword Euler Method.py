@@ -42,7 +42,7 @@ def show_concentration(event):
         iy, ix = int(event.xdata / dx), int(event.ydata / dy)
         if 0 <= iy < nx and 0 <= ix < ny:
             concentration = u[ix, iy]
-            annotation.set_text(f'Pos: ({ix}, {iy})\nConc: {concentration:.2f}')
+            annotation.set_text(f'Pos: ({iy}, {ix})\nConc: {concentration:.2f}')
             annotation.xy = (0.95, 0.05)
             annotation.set_visible(True)
             plt.draw()

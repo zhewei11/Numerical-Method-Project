@@ -9,11 +9,11 @@ import sys
 # Function to run the selected mode script and generate the plot
 def run_mode_script(mode):
     if mode == "Finite-Difference Method":
-        script_path = "Finite-Difference Method.py"
+        script_path = "code/Finite-Difference Method.py"
     elif mode == "Forword Euler Method":
-        script_path = "Forword Euler Method.py"
+        script_path = "code/Forword Euler Method.py"
     elif mode == "Spectral Methods":
-        script_path = "Spectral Methods.py"
+        script_path = "code/Spectral Methods.py"
 
     else:
         plt.figure()
@@ -68,7 +68,7 @@ def main(page: ft.Page):
 
     # Image (assuming 'lake.jpg' is in the current directory)
     img = ft.Image(
-        src="lake2.jpg",
+        src="picture/lake2.jpg",
         width=400,
         height=400,
         fit=ft.ImageFit.CONTAIN,
